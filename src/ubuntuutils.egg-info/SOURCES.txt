@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/ubuntuutils/__init__.py
+src/ubuntuutils/uu_io.py
+src/ubuntuutils/uu_package.py
+src/ubuntuutils/uu_run_command_container.py
+src/ubuntuutils/uu_user_perm.py
+src/ubuntuutils.egg-info/PKG-INFO
+src/ubuntuutils.egg-info/SOURCES.txt
+src/ubuntuutils.egg-info/dependency_links.txt
+src/ubuntuutils.egg-info/top_level.txt
