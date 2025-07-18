@@ -4,7 +4,7 @@ import shlex
 import logging
 
 class RCC:
-   def __init__(self, command, suppress_output = False):
+   def __init__(self, command: str, suppress_output: bool = False):
       """
       Runs given command and waits for it to finish
       std_out and std_err are guaranteed to be strings, and are kept for the lifetime of the object twice (once as raw, once formatted)

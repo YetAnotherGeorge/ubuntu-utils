@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-import subprocess
-import shlex
 import os
-import pwd
-import grp
 import shutil
 import logging
 
@@ -35,7 +31,7 @@ def file_write_utf8(path: str, contents: str, permission_bits: int | None = None
       logging.debug(f"<{oct(permission_bits)}> \"{path}\"")
       os.chmod(path, permission_bits)
 
-def clear_directory(directory):
+def clear_directory(directory: str):
    """
    Removes all contents of a directory.
    Use carefully

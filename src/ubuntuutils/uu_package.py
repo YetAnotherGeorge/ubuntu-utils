@@ -1,9 +1,9 @@
 import re
 import ubuntuutils.uu_run_command_container as run_command_container
 
-def check_package_installed(package_name) -> bool:
+def check_package_installed(package_name: str) -> bool:
    """
-   Checks if the package with the given name is installed
+   Checks if the package with the given name is installed using dpkg
    """
    if re.fullmatch(r"^[a-zA-Z0-9\.\-]+$", package_name) is None:
       raise ValueError(f"Invalid package name: {package_name}")
